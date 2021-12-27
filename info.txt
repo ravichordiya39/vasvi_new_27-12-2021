@@ -1,0 +1,1 @@
+mongodb://amitdbuser:amitdbpassword@192.46.214.45:27017/mernApp

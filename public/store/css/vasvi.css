@@ -1,0 +1,17 @@
+  .sizepop-active{
+    background-color : #ED6388;
+    color : white !important;
+  }
+
+  .sizepop-inactive{
+    background-color : white;
+    color : black !important;
+  }
+
+  .colorpop-active{
+      outline : 4px solid grey !important;
+  }
+
+  .colorpop-inactive{
+      outline : 0px solid grey !important;
+  }

@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+.show{
+  width: 82%;
+ float: left; z-index: 222;
+ position: relative;
+}
+.show img#show-img{
+  height:auto;
+}
+/*#small-img-roll {left: 0px !important;}*/
+.show img {max-width: none !important; }
+#show-img { width: 400px; height: 400px;  }
+.small-img{
+  width: 18%;
+  position: relative; float: left;
+    text-align: center;
+}
+.small-img .icon-left, .small-img .icon-right{
+  width: 20px;
+  cursor: pointer;
+  position: inherit; 
+  margin:0;
+/*
+    
+  left: 0px; right: 0px;
+  margin: 0 auto; font-size: 18px; 
+*/
+ 
+}
+.small-img .icon-left{
+  /*transform: rotate(-90deg);
+  top: -35px; right: 32px;*/
+}
+.small-img .icon-right{
+  bottom: -10px; right: 32px;
+  /*transform: rotate(90deg);*/
+}
+.small-img .icon-left:hover, .small-img .icon-right:hover{
+  color: #e05b5b;
+}
+.small-container{
+width: 107px;
+height: 645px;
+overflow-y: scroll;
+padding: 0 5px;
+  /*
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+*/
+}
+.Quixck .small-container {
+    height: 491px;
+}
+.small-container div{
+/*
+  width: 800%;
+  position: relative;
+*/
+}
+
+
+#product-box-modal .small-container {
+    width: 100px;
+    height: 518px;
+    overflow-y: scroll;
+    padding: 0 10px;
+}
+
+
+.small-container .show-small-img{
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  float: none; display: block; border: 1px solid #e5e5e5;
+}
+.small-container .show-small-img:last-of-type{
+  margin-right: 0;
+}

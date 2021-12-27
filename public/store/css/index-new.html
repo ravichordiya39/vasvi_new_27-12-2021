@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title></title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="vasvi shop project">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min-3.3.7.css">
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <link rel="stylesheet" type="text/css" href="css/style-new.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/front-new.css">
+   </head>
+   <body>
+      <!-- OTP Modal Star here -->
+      <div class="modal fade" id="OTPModal" tabindex="-1" role="dialog" aria-labelledby="OTPModalLabel" aria-hidden="true">
+         <div class="modal-dialog opt-dialog" role="document">
+            <div class="modal-content"> 
+               <div class="modal-body">
+
+                   <button type="button" class="close opt-close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+
+                  <div class="row">
+                     <div class="col-sm-2"></div>
+                     <div class="col-sm-8">
+
+                        <h4 class="modal-title mb-4 text-center ">Enter OTP</h4> 
+                        <p style="font-size:13px; color:#333; margin-bottom:0px; line-height:25px; text-align:center;">A Verification code has been send to your mobile 
+                        </p>
+                        <div class="form-group mobilenumber-input">
+                           <input type="text" class="form-control text-center boldtxt otp-number" value="9929294352"  >
+                           <button class="edit-icon edit-btn-new text-danger">
+                           <i class="fas fa-pencil-alt"></i></button>
+                        </div>
+
+                        <div class="form-group mobilenumber-input">
+                           <input type="text" class="form-control text-center boldtxt otp-number" placeholder="Enter Verification code (OTP)"   > 
+                        </div>
+                        <div>
+                           <button type="button" class="btn btn-danger btn-block  f_size13" id="submit">VERIFY</button>
+                        </div>
+ 
+                        <a href="#" class="text-danger text-center mt-4" onclick="resend();">Resend?</a> 
+
+                     </div>
+                      
+
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      <!-- OTP Modal Star here -->
+      <!-- Sign Up  Modal start here -->
+      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+         <div class="modal-dialog " role="document">
+            <div class="modal-content col-md-12 pad-l0 pad-r0">
+
+
+               <div class="modal-body login_modal register-modal">
+                   
+                     <div class="row">
+
+                        <div class="col-md-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                           <div class="pad15">
+                              <h2 class="modal_title">Create An Account</h2>
+                              <div class="loginform-subtitle">Enter registered mobile number OR email id to login</div>
+                              <div class="formrow martop15 borbotnone">
+                                 <div class="col-md-12 text-center">
+                                    <a href="#" class="btn btn-social btnfb"><i class="fab fa-facebook-f"></i> <span class="divider"></span> Login with Facebook</a> 
+                                    <a href="#" class="btn btn-social btn-gmail"><i class="fab fa-google"></i> <span class="divider"></span> Login with Google</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-12"> 
+                                    
+                                    <form>
+                           <div class="formrow">
+                              <div class="col-lg-12 col-md-12 col-sm-12 iconbg namefield">
+                                 <input type="text" name="username" placeholder="First & Last Name" class="form-control"> 
+                              </div>
+                           </div>
+                           <div class="formrow">
+                              <div class="col-lg-12 col-md-12 col-sm-12 iconbg emailfield">
+                                 <input type="text" name="username" placeholder="Email Id" class="form-control">
+                              </div>
+                           </div>
+                           <div class="formrow">
+                              <div class="col-lg-12 col-md-12 col-sm-12 iconbg mobilefield">
+                                 <input type="text" name="username" placeholder="Mobile Number" class="form-control">
+                              </div>
+                           </div>
+                           <div class="formrow">
+                              <div class="col-lg-12 col-md-12 col-sm-12 iconbg passfield">
+                                 <input type="Password" name="username" placeholder="Password" class="form-control">
+                                 <a href="#" class="iconviewpass"></a>
+                              </div>
+                           </div>
+                           <div class="formrow">
+                              <div class="col-lg-12 col-md-12 col-sm-12 iconbg locfield">
+                                 <select class="form-control">
+                                    <option value="">City</option>
+                                    <option>Jaipur</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row martop10">
+                              <div class="col-md-12" style="text-align:center;"><button  class="btn  btn-pink otp-modal " type="button" data-toggle="modal" data-target="#OTPModal" style="cursor: pointer;">Get OTP</button>
+                              </div>
+                              <div class="col-md-12 signuplink">Do you have an account? <a href="JavaScript:void(0);" data-toggle="modal" data-target="#loginModal" class="signin-btn">Sign In</a></div>
+                           </div>
+                        </form>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div> 
+               </div>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+               </div> 
+            </div>
+         </div>
+      </div>
+      <!-- Sign Up Modal end here -->
+      <!-- Login Modal start here -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+         <div class="modal-dialog  " role="document">
+            <div class="modal-content"> 
+               <div class="modal-body login_modal">
+                   
+                     <div class="row">
+
+                        <div class="col-md-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                           <div class="pad15">
+                              <h2 class="modal_title">Member Sign In</h2>
+                              <div class="loginform-subtitle">Enter registered mobile number OR email id to login</div>
+                              <div class="formrow martop15 borbotnone">
+                                 <div class="col-md-12 text-center">
+                                    <a href="#" class="btn btn-social btnfb"><i class="fab fa-facebook-f"></i> <span class="divider"></span> Login with Facebook</a> 
+                                    <a href="#" class="btn btn-social btn-gmail"><i class="fab fa-google"></i> <span class="divider"></span> Login with Google</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                 <form>
+                                    <div class="formrow">
+                                       <label class="label-title">Mobile Number, Email ID</label>
+                                       <div class="icon"><i class="far fa-envelope"></i></div>
+                                       <input type="text" name="username" value="" class="form-control">                     
+                                    </div>
+                                    <div class="formrow">
+                                       <label class="label-title">Password</label>
+                                       <div class="icon" style="font-size:25px;">***</div>
+                                       <input type="password" name="password" value="" class="form-control">    
+                                    </div>
+                                    <div class="formrow borbotnone">
+                                       <div class="row">
+                                          <div class="col-md-8 text-left txt-terms" ><input type="checkbox">I accept agreen <a href="#">New Customer Agreement</a></div>
+                                          <div class="col-md-4 text-right txt-forgotpass" ><a href="JavaScript:Void(0);" data-toggle="modal" data-target="#forgotpassModal" >Forgot Password</a></div>
+                                       </div>
+                                    </div>
+                                    <div class="row martop10">
+                                       <div class="col-md-12" style="text-align:center;"><button name="submit" class="btn  btn-signup btn-pink " type="submit">SIGN IN</button>
+                                       </div> 
+                                       <div class="col-md-12 signuplink">Don't have an account? <a name="submit" class="" type="button" href="#">Sign Up</a></div>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div> 
+               </div> 
+            </div>
+         </div>
+      </div>
+      <!-- Login Modal end here -->
+      <!-- Header -->
+      <header class="header">
+         <section id="navbar">
+            <div class="header_main ">
+               <div class="container">
+                  <div class="row">
+                     <div style="padding-right: 0" class="col-lg-12" style="position: unset;">
+                        <div class="col-lg-2">
+                           <div class="logo">
+                              <a href="#"><img class="img-fluid" src="images/logo.png" alt="" width="150" /></a>
+                           </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8" style="position: unset;">
+                           <nav class="main_nav">
+                              <div class="menu-container">
+                                 <div class="menu">
+                                    <ul>
+                                       <li><a class="menu1" href="#">Home</a></li>
+                                       <li>
+                                          <a class="menu2" href="detail_page.html">Product</a>
+                                          <ul style="display:none;">
+                                             <li>
+                                                <div class="menu-inner-h" href="#">Best Buying</div>
+                                                <ul>
+                                                   <li><a href="#">Lidership</a></li>
+                                                   <li><a href="#">History</a></li>
+                                                   <li><a href="#">Locations</a></li>
+                                                   <li><a href="#">Careers</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <div class="menu-inner-h" href="#">Research</div>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate</a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <div class="menu-inner-h" href="#">Research</div>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate</a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <div class="menu-inner-h" href="#">Research</div>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate</a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li><a class="menu3" href="myaccount.html">News</a>
+                                       </li>
+                                       <li>
+                                          <a class="menu4" href="category.html">Categories</a>
+                                          <ul>
+                                             <li>
+                                                <a class="menu-inner-h2" href="#">Best Buying</a>
+                                                <ul>
+                                                   <li><a href="#">Lidership</a></li>
+                                                   <li><a href="#">History</a></li>
+                                                   <li><a href="#">Locations</a></li>
+                                                   <li><a href="#">Careers</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <a class="menu-inner-h2" href="#">Research</a>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate </a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <a class="menu-inner-h2" href="#">Research</a>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate </a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="menures">
+                                                <a class="menu-inner-h2" href="#">Research</a>
+                                                <ul>
+                                                   <li><a href="#">Undergraduate </a></li>
+                                                   <li><a href="#">Masters </a></li>
+                                                   <li><a href="#">Funding</a></li>
+                                                </ul>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li><a class="menu4" href="category.html">Categories</a></li>
+                                       <li><a class="menu4" href="category.html">Categories</a></li>
+                                       <li><a class="menu4" href="category.html">Categories</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </nav>
+                        </div>
+                        <div class="col-md-2  header-rgt-panel" style="position: relative;">
+                           <div style="padding-right: 0">
+                              <div class="header-rgt-menu">
+                                 <ul>
+                                    <li>
+                                       <a href="#"><i style="font-size: 18px; margin-right:5px;" class="fas fa-search"></i> <span style="font-family: 'Righteous', cursive; color:#000; font-size:12px;">Search</span></a>
+                                       <div class="dropdown-content search-dropdown">
+                                          <input type="text" name="" placeholder="Search goes here" />
+                                          <button><i class="fas fa-search"></i></button>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a href="#"><i style="font-size: 18px; margin-top: 5px;" class="far fa-user"></i></a>
+                                       <div class="dropdown-content account-dropdown">
+                                          <ul class="user-details">
+                                             <li>
+                                                <p class="text-left"><i class="fa fa-user-circle theme-color user-icon" aria-hidden="true"></i> Hi, John</p>
+                                             </li>
+                                             <li>
+                                                <p class="text-left"><i class="fa fa-table theme-color user-icon" aria-hidden="true"></i> Dashboard</p>
+                                             </li>
+                                             <li>
+                                                <p class="text-left"><i class="fa fa-power-off theme-color user-icon" aria-hidden="true"></i> Logout</p>
+                                             </li>
+                                          </ul>
+                                          <ul>
+                                             <li>
+                                                <a href="#"><img src="images/facebook-svg.svg" alt="" width="220" /></a>
+                                             </li>
+                                             <li>
+                                                <a href="#"><img src="images/google-svg.svg" alt="" width="220" /></a>
+                                             </li>
+                                             <li><strong>OR</strong></li>
+                                             <li><button type="button" class="btn-grey" data-toggle="modal" data-target="#loginModal">Sign In</button></li>
+                                             <li><button type="button" class="btn-grey" data-toggle="modal" data-target="#registerModal">Sign Up</button></li>
+                                          </ul>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a href="#"><i style="font-size: 18px; margin-top: 5px;" class="far fa-heart"></i></a>
+                                       <div class="dropdown-content wishlist-content">
+                                          <p><i style="font-size: 18px; margin-top: 5px;" class="far fa-heart"></i>
+                                             <br/>Love Something ? Save it here
+                                          </p>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a class="bag" href="#"></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </header>
+      <div class="headertopspace"></div>
+      <!--Slider Section start here-->
+      <section class="top-banner">
+         <div  class="container-fluid padlr0">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                           <img style="max-width: 100%;" src="images/banner2.jpg" alt="Slider">
+                        </div>
+                        <div class="item">
+                           <img style="max-width: 100%;" src="images/banner3.jpg" alt="Slider">
+                        </div>
+                     </div>
+                     <!-- Controls -->
+                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                     <i class="fas fa-arrow-left"></i>
+                     </a>
+                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                     <i class="fas fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--Slider Section end here-->
+      <!-- New Arrivals Section start here -->
+      <section class="top-banner">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 heading-title text-center">
+                  <h2 class="title-txt">New Arrivals</h2>
+                  <img src="images/headline.png">
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="side-img col-md-12">
+                        <img height="90%" class="img-fluid" src="images/fmix.jpg" alt="women" />
+                     </div>
+                     <div class="side-img col-md-12">
+                        <img height="90%" class="img-fluid" src="images/easy.jpg" alt="women" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img style="height: 504px;" class="img-fluid" src="images/fsuit.jpg" alt="women" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- New Arrivals Section start here -->>
+      <!--Proudct item Slider Start here-->
+      <div style="padding-top:60px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="home-product product-slider">
+                     <div class="owl-carousel owl-theme home-product-slider">
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3459.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3454.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3512.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3511.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3552.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3551.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3566.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3563.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3605.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3604.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="product-card">
+                              <div>
+                                 <div id="f1_container">
+                                    <div id="f1_card" class="shadow">
+                                       <div class="front face">
+                                          <img src="images/ARP3625.jpg" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="back face center">
+                                          <img src="images/ARP3624.jpg" class="img-responsive" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-caption">
+                                 <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p>
+                                 <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+                              </div>
+                              <div class="caption-hover">
+                                 <span class="circle-size"  >
+                                    <p>Select Size </p>
+                                    <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a>
+                                 </span>
+                                 <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+                                 <div class="text-caption">
+                                    <p><strong>Kurty</strong> Dry Woven Team Training</p>
+                                 </div>
+                                 <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+                              </div>
+                              <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Proudct item Slider end here-->
+      <!--View all deals Section start here-->
+      <section class="round-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center heading-title">
+                  <h2 class="title-txt">View all deals</h2>
+                  <img src="images/headline.png">
+               </div>
+            </div>
+         </div>
+         </div>
+         <div class="container home-product" id="featuredCat">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="owl-carousel owl-theme trends_slider">
+                     <div class="item">
+                        <div class="catone">
+                           <img src="images/ARP3843.jpg" class="img-responsive">
+                           <div class="offers">
+                              <p>FLAT 60% Off</p>
+                              <p class="newprice">Under 499 INR</p>
+                              <a href=""> Shop Now</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="catone">
+                           <img src="images/ARP3566.jpg" class="img-responsive">
+                           <div class="offers">
+                              <p>FLAT 10% Off</p>
+                              <p class="newprice">Under 499 INR</p>
+                              <a href=""> Shop Now</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="catone">
+                           <img src="images/ARP3605.jpg" class="img-responsive">
+                           <div class="offers">
+                              <p>FLAT 10% Off</p>
+                              <p class="newprice">Under 499 INR</p>
+                              <a href=""> Shop Now</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="catone">
+                           <img src="images/ARP3714.jpg" class="img-responsive">
+                           <div class="offers">
+                              <p>FLAT 50% Off</p>
+                              <p class="newprice">Under 499 INR</p>
+                              <a href=""> Shop Now</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="catone">
+                           <img src="images/ARP3903.jpg" class="img-responsive">
+                           <div class="offers">
+                              <p>FLAT 30% Off</p>
+                              <p class="newprice">Under 499 INR</p>
+                              <a href=""> Shop Now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <!--View all deals Section end here-->
+      <!--Best Seller Section start here-->
+      <section>
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center heading-title">
+      <h2 class="title-txt">Best Seller</h2>
+      <img src="images/headline.png">
+      </div>
+      <div class="col-xs-12">
+      <div class="row">
+      <div class="col-sm-6 col-xs-12">
+      <div class="catImg">
+      <img src="images/bestsle0.jpg" class="img-responsive">
+      </div>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+      <div class="catImg">
+      <img src="images/bestsle1.jpg" class="img-responsive">
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--Best Seller Section start here-->
+      <!--Proudct item Slider Start here-->
+      <section class="colorfulbg"> 
+      <div style="padding-top:60px;">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-12">
+      <div class="home-product best_seller">
+      <div class="owl-carousel owl-theme  home-product-slider">
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3644.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3642.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3714.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3713.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3721.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3718.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3726.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3725.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3743.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3746.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3625.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3624.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--Proudct item Slider end here-->
+      <!--Vasvi Exclusive Slider Start here-->
+      <section>
+      <div class="col-md-12 text-center heading-title">
+      <h2 class="title-txt">Vasvi Exclusive</h2>
+      <img src="images/headline.png">
+      </div>
+      <div class="exclusive-bg"></div>
+      <div style="padding-top:60px;">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-12">
+      <div class="home-product vasvi_exclusive_slider">
+      <div class="owl-carousel owl-theme home-product-slider">
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3459.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3454.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3512.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3511.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3552.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3551.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3566.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3563.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3605.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3604.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="product-card">
+      <div>
+      <div id="f1_container">
+      <div id="f1_card" class="shadow">
+      <div class="front face">
+      <img src="images/ARP3625.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="back face center">
+      <img src="images/ARP3624.jpg" class="img-responsive" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p>
+      <p> <span class="price-txt">Rs.1000</span> <span class="price-oveline">Rs.250</span> <span class="discount-text">30%</span></p> 
+      <p class="pro-rating"> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    (1)
+                                 </p>
+      </div>
+      <div class="caption-hover">
+      <span class="circle-size"  > 
+      <p>Select Size </p>
+      <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      <div class="btn-section"><a href="#" class="pinkBtn">Add To Cart</a> <a href="javascript:void(0)" class="pinkBtn btnbuynow">Buy Now</a></div>
+      <div class="text-caption"><p><strong>Kurty</strong> Dry Woven Team Training</p></div>
+      <span class="size"> <a href="#">S</a><a href="#">M</a><a href="#">XL</a> <a href="#">XXL</a></span>
+      </div>
+      <div class="icon-wishlist"><button type="button"  data-toggle="tooltip" data-placement="left" title="Save for Later"><i class="fas fa-heart"></i></button> </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--Vasvi Exclusive Slider end here-->
+      <section class="vasvi-offer-banner"><img src="images/banner2.jpg" alt="" /> </section>
+      <section class="who-we-section">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center heading-title">
+      <h2 class="title-txt">Who We Are</h2>
+      <img src="images/headline.png">
+      </div>
+      <p class="how-we-p text-center">
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book
+      </p>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!-- Customer Reviews Section start -->
+      <section class="client-review">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center heading-title">
+      <h2 class="title-txt">What our customer says</h2>
+      <img src="images/headline.png">
+      </div>
+      <div class="owl-carousel owl-theme col-md-12">
+      <div class="item">
+      <div class="col-lg-3">
+      <img class="imground client-img"  src="./images/user-icon1.png" width="60" alt="customer">
+      <h4 class="client-name">Dzone Gupta</h4>
+      <p class="client-location">Jaipur </p>
+      </div>
+      <div class="col-lg-9">
+      <div class="testimonial-text">
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="col-lg-3">
+      <img class="imground client-img"  src="./images/user-icon2.png" width="60" alt="customer">
+      <h4 class="client-name">Manish Sharma</h4>
+      <p class="client-location">Jaipur </p>
+      </div>
+      <div class="col-lg-9">
+      <div class="testimonial-text">
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="col-lg-3">
+      <img class="imground client-img"  src="./images/user-icon2.png" width="60" alt="customer">
+      <h4 class="client-name">Manish Sharma</h4>
+      <p class="client-location">Jaipur </p>
+      </div>
+      <div class="col-lg-9">
+      <div class="testimonial-text">
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="col-lg-3">
+      <img class="imground client-img"  src="./images/user-icon2.png" width="60" alt="customer">
+      <h4 class="client-name">Manish Sharma</h4>
+      <p class="client-location">Jaipur </p>
+      </div>
+      <div class="col-lg-9">
+      <div class="testimonial-text">
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!-- Customer Reviews Section end -->
+      <!-- Blog Section start here -->
+      <div class="container">
+      <div class="row  ">
+      <div class="col-md-12 text-center heading-title">
+      <h2 class="title-txt">Latest Blog</h2>
+      <img src="images/headline.png">
+      </div>
+      </div>
+      <div class="row justify-content-center ">
+      <div class="col-lg-3 col-md-3">
+      <div class="home-blog d-block">
+      <img class="img-fluid" src="./images/blog1.jpg" alt="blog" />
+      <div class="home-blog-content">
+      <div class="home-blog-title"><a href="#">Trends 2018</a></div>
+      <div class="home-blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+      <div class="home-blog d-block">
+      <img class="img-fluid" src="./images/blog1.jpg" alt="blog" />
+      <div class="home-blog-content">
+      <div class="home-blog-title"><a href="#">Trends 2018</a></div>
+      <div class="home-blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+      <div class="home-blog d-block">
+      <img class="img-fluid" src="./images/blog2.jpg" alt="blog" />
+      <div class="home-blog-content">
+      <div class="home-blog-title"><a href="#">Trends 2018</a></div>
+      <div class="home-blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+      <div class="home-blog d-block">
+      <img class="img-fluid" src="./images/blog3.jpg" alt="blog" />
+      <div class="home-blog-content">
+      <div class="home-blog-title"><a href="#">Trends 2018</a></div>
+      <div class="home-blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- Blog Section end here -->
+      <!-- Newsletter -->
+      <div class="newsletter">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+      <div class="newsletter_title text-left">We accept</div>
+      <ul class="we-accept-img">
+      <li>
+      <a href="#"><img class="img-fluid" src="./images/payment.png" alt="payments"></a>
+      </li>
+      </ul>
+      </div>
+      <div class=" col-md-4">
+      <div class="footer_column">
+      <div class="newsletter_title text-left">Download our app</div>
+      <ul class="footer_list">
+      <li>
+      <a href="#"><img class="img-fluid" src="./images/ios.png" alt="payments"></a>
+      </li>
+      <li>
+      <a href="#"><img class="img-fluid" src="./images/android.png" alt="payments"></a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="newsletter_title text-left">Subscribe for Latest Update</div>
+      <div class="newsletter_content clearfix">
+      <form action="#" class="newsletter_form">
+      <input type="email" class="newsletter_input" required placeholder="Enter your email address">
+      <button class="newsletter_button">Subscribe</button>
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- Footer -->
+      <div class="characteristics">
+      <div class="container">
+      <div class="row">
+      <!-- Char. Item -->
+      <div class="col-lg-3 col-md-6 char_col">
+      <div class="char_item d-flex flex-row align-items-center justify-content-start">
+      <div class="char_icon"><i class="fas fa-check-circle"></i></div>
+      <div class="char_content">
+      <div class="char_title">100% Authorised
+      <br> product</div>
+      </div>
+      </div>
+      </div>
+      <!-- Char. Item -->
+      <div class="col-lg-3 col-md-6 char_col">
+      <div class="char_item d-flex flex-row align-items-center justify-content-start">
+      <div class="char_icon"><i class="fas fa-truck"></i></div>
+      <div class="char_content">
+      <div class="char_title">15 Days Return </div>
+      </div>
+      </div>
+      </div>
+      <!-- Char. Item -->
+      <div class="col-lg-3 col-md-6 char_col">
+      <div class="char_item d-flex flex-row align-items-center justify-content-start">
+      <div class="char_icon"><i class="fas fa-headphones"></i></div>
+      <div class="char_content">
+      <div class="char_title"> Quick support </div>
+      </div>
+      </div>
+      </div>
+      <!-- Char. Item -->
+      <div class="col-lg-3 col-md-6 char_col">
+      <div class="char_item d-flex flex-row align-items-center justify-content-start">
+      <div class="char_icon"><i class="fas fa-handshake"></i></div>
+      <div class="char_content">
+      <div class="char_title">Free Delivery</div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <section class="footer-top">
+      <div class="container">
+      <div class="row">
+      <div class=" col-md-4">
+      <div class="footer_column">
+      <div class="footer_title">Secure Pay</div>
+      <ul class="Secure-pay">
+      <li>
+      <a href="#"><img class="img-responsive" src="./images/SSL_Secure.png" alt="payments"></a>
+      </li>
+      <li>
+      <a href="#"><img class="img-responsive" src="./images/ssl-secure-shopping.png" width="80px" alt="payments"></a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-4">
+      <div class="footer_column footer-contact">
+      <div class="footer_title">Any questions</div>
+      <div style="padding-top: 20px" class="media">
+      <div class="icon-support">
+      <i class="fab fa-whatsapp"></i>
+      <i class="fas fa-phone"></i>
+      </div>
+      <div class="support-text">
+      +91 6376681424
+      </div>
+      </div>
+      <div class="media">
+      <div class="icon-support"><i class="fas fa-envelope"></i></div>
+      <div class="support-text">
+      care@vasvi.in
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class=" col-md-4">
+      <div class="footer_column">
+      <div class="footer_title">Follow us</div>
+      <div class="footer_social">
+      <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="#"><i class="fab fa-google"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <button  class="float"   >
+      <i class="fa fa-comments my-float" id="chatbox" aria-hidden="true"></i>
+      </button>
+      <div id="myForm" class="hide">
+      <form action="/echo/html/" id="popForm" method="get">
+      <div class="">
+      <label class="chat-label" for="name">Name:</label>
+      <input type="text" name="name" id="name" class="form-control input-md">
+      <label class="chat-label" for="email">Email:</label>
+      <input type="email" name="email" id="email" class="form-control input-md">
+      <label class="chat-label" for="phone">Phone:</label>
+      <input type="phone" name="email" id="phone" class="form-control input-md"> 
+      <label class="chat-label" for="about">Message:</label>
+      <textarea rows="3" name="about" id="about" class="form-control input-md"></textarea>
+      <button type="button" class="btn btn-submit-review btn-block mt-4" data-loading-text="Sending info.."><em class="icon-ok"></em> SUBMIT</button>
+      </div>
+      </form>
+      </div>
+      <footer class="footer">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-3">
+      <div class="footer_column">
+      <div class="footer_title">Customer</div>
+      <ul class="footer_list">
+      <li><a href="#">Girl Dreess & Tablets</a></li>
+      <li><a href="#">TV & Audio</a></li>
+      <li>
+      <a href="#" onclick="document.getElementById('id03').style.display='block'"><i class="fas fa-headset"></i> Help / Support</a></li>
+      </ul>
+      <div class="footer_subtitle">Gadgets</div>
+      <ul class="footer_list">
+      <li><a href="#">Car Electronics</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-3">
+      <div class="footer_column">
+      <div class="footer_title">Policies</div>
+      <ul class="footer_list">
+      <li><a href="#">My Account</a></li>
+      <li><a href="#">Order Tracking</a></li>
+      <li><a href="#">Wish List</a></li>
+      <li><a href="#">Customer Services</a></li>
+      <li><a href="#">Returns / Exchange</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Product Support</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-3">
+      <div class="footer_column">
+      <div class="footer_title">Vasvi and store</div>
+      <ul class="footer_list">
+      <li><a href="#">My Account</a></li>
+      <li><a href="#">Order Tracking</a></li>
+      <li><a href="#">Wish List</a></li>
+      <li><a href="#">Customer Services</a></li>
+      <li><a href="#">Returns / Exchange</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Product Support</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-3 footer_col">
+      <div class="footer_column">
+      <div class="footer_title">Contact Info</div>
+      <ul class="contact-info">
+      <li>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br>G/13, Lorem ipsum Industrial Area,<br> Jaipur, Rajasthan</p></li>
+      <li><p><i class="fas fa-mobile-alt"></i><strong>Phone:</strong> <a href="tel:+911414037596"> (+91) 141 4037596</a> - <a href="tel:+911414029596">4029596</a></p></li>
+      <li> <a href="#" target="_blank"><img alt="whatsapp" src="images/whatsapp-icon.png" style="margin-right: 7px;" width="15"><strong>Whatsapp:</strong> (+91) 9314966969</a></li>
+      <li><p><i class="fas fa-envelope"></i><strong>Email:</strong><a href="mailto:info@vasvi.com">info@vasvi.com</a></p></li><li><p><i class="far fa-clock"></i><strong>Working Days/Hours:</strong><br>Mon - Sat / 10:00AM - 7:00PM</p>
+      </li>
+      </ul>
+      </div>  
+      </div>
+      </div>
+      </div>
+      </footer>
+      <div class="copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col">
+      <div class="copyright_container d-flex flex-sm-row flex-column">
+      <div style="text-align: center;" class="copyright_content col-md-12">
+      <p>Copyright @ 2018 vasvi.in - All Right Reserved | <a style="color: #979797; border-bottom: 0" href="http://dzoneindia.org/" target="_blank">Powered By dzone India.</a></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/megamenu.js"></script>
+      <script>
+         $(document).ready(function(){
+             $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script> 
+      <script>
+         $(document).ready(function() {
+           $('.product-slider .owl-carousel').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay:true,
+             responsiveClass: true,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: true
+               },
+               600: {
+                 items: 2,
+                 nav: false
+               },
+               1000: {
+                 items: 4,
+                 nav: true,
+                 loop: false,
+                 margin: 20
+               }
+             }
+           })
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+           $('#featuredCat .owl-carousel').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay:true,
+             responsiveClass: true,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: true
+               },
+               600: {
+                 items: 2,
+                 nav: false
+               },
+               1000: {
+                 items: 4,
+                 nav: true,
+                 loop: false,
+                 margin: 20
+               }
+             }
+           })
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+           $('.best_seller .owl-carousel').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay:true,
+             responsiveClass: true,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: true
+               },
+               600: {
+                 items: 2,
+                 nav: false
+               },
+               1000: {
+                 items: 4,
+                 nav: true,
+                 loop: false,
+                 margin: 20
+               }
+             }
+           })
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+           $('.vasvi_exclusive_slider .owl-carousel').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay:true,
+             responsiveClass: true,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: true
+               },
+               600: {
+                 items: 2,
+                 nav: false
+               },
+               1000: {
+                 items: 4,
+                 nav: true,
+                 loop: false,
+                 margin: 20
+               }
+             }
+           })
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+           $('.client-review .owl-carousel').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay:true,
+             responsiveClass: true,
+             responsive: {
+               0: {
+                 items: 1,
+                 nav: true
+               },
+               600: {
+                 items: 2,
+                 nav: false
+               },
+               1000: {
+                 items: 2,
+                 nav: true,
+                 loop: false,
+                 margin: 20
+               }
+             }
+           })
+         })
+      </script>
+      <script>
+         $(window).scroll(function() {
+             if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                 $('#return-to-top').fadeIn(200); // Fade in the arrow
+             } else {
+                 $('#return-to-top').fadeOut(200); // Else fade out the arrow
+             }
+         });
+         $('#return-to-top').click(function() { // When arrow is clicked
+             $('body,html').animate({
+                 scrollTop: 0 // Scroll to top of body
+             }, 500);
+         });
+      </script>
+      <script>
+         window.onscroll = function() {
+             myFunction()
+         };
+         
+         var navbar = document.getElementById("navbar");
+         var sticky = navbar.offsetTop;
+         
+         function myFunction() {
+             if (window.pageYOffset >= sticky) {
+                 navbar.classList.add("sticky")
+             } else {
+                 navbar.classList.remove("sticky");
+             }
+         }
+      </script>
+      <script>
+         $(document).ready(function(){
+           $(".signin-btn").click(function(){
+            $("#registerModal").hide(); 
+           
+           });
+         
+           $(".signup-btn").click(function(){
+            $("#loginModal").hide(); 
+             
+           });
+         
+          
+         
+         });
+           
+           
+      </script>
+      <script type="text/javascript">
+         $(function(){
+         $('#chatbox').popover({
+          
+           placement: 'top',
+           title: 'Write a Note',
+           html:true,
+           content:  $('#myForm').html()
+         }).on('click', function(){
+         // had to put it within the on click action so it grabs the correct info on submit
+         $('.btn-submit-review ').click(function(){
+          $('#result').after("form submitted by " + $('#email').val())
+           $.post('/echo/html/',  {
+               email: $('#email').val(),
+               name: $('#name').val(),
+               phone: $('#phone').val(),
+           }, function(r){
+             $('#pops').popover('hide')
+             $('#result').html('resonse from server could be here' )
+           })
+         })
+         })
+         })
+         
+         
+         
+         
+      </script>
+   </body>
+</html>
